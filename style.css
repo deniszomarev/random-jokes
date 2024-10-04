@@ -1,0 +1,114 @@
+body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+section {
+  height: 690px;
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px auto 0px auto;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  width: 100px;
+  height: 85px;
+  border-radius: 100%;
+  margin: 10px 10px 10px 10px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ecf0f1;
+  box-shadow: 0px 6px #c0392b;
+  background: #e74c3c;
+}
+button:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0px 0px #c0392b;
+  background: #c0392b;
+}
+
+.joke {
+  height: auto;
+  text-align: center;
+  margin-top: 5px;
+}
+.joke p {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+footer {
+  text-align: center;
+  vertical-align: bottom;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+}
+footer span {
+  color: white;
+}
+
+.text {
+  cursor: pointer;
+  font-family: "Righteous";
+  color: #fff;
+  font-weight: 200;
+}
+
+.toggle-button {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  margin: 0;
+  vertical-align: top;
+  background: #ffffff;
+  border: 1px solid #bbc1e1;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.toggle-button::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 1.5px;
+  width: 20px;
+  height: 20px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  transform: translateX(0);
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.toggle-button:checked::after {
+  transform: translateX(calc(100% + 3px));
+  background-color: #fff;
+}
+
+.toggle-button:checked {
+  background-color: #e74c3c;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Random jokes</title>
+  </head>
+  <body>
+    <section class="content">
+      <div class="image">
+        <img src="assets/img/main.jpg" alt="agutin button" />
+      </div>
+      <div class="button">
+        <button id="button" onclick="getJoke()" type="submit">
+          ПОЛУЧИТЬ ЦИТАТУ!11
+        </button>
+      </div>
+      <div class="joke">
+        <p id="joke"></p>
+      </div>
+      <div class="container">
+        <label for="toggle-button" class="text">en</label>
+        <input
+          type="checkbox"
+          name="toggle"
+          id="toggle-button"
+          class="toggle-button"
+          value="false"
+        />
+        <label for="toggle-button" class="text">ru</label>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__date">
+        <a target="_blank" href="https://github.com/deniszomarev"
+          >@deniszomarev</a
+        >
+        <span id="year">2024</span>
+      </div>
+    </footer>
+    <audio id="audio" src="assets/mp3/golos-knopka.mp3"></audio>
+  </body>
+  <script src="index.js"></script>
+</html>
